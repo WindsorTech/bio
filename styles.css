@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to bottom, #1e1e2f, #3c3c55);
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#profile, #projects, #contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-container {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #61dafb;
+}
+
+#profile h2, #profile p {
+    color: #ffffff; /* Set text color to white for better contrast */
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #444;
+    color: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background: #61dafb;
+    color: black;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background: #61dafb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background: #333;
+    color: #61dafb;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+footer {
+    background: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animation classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
